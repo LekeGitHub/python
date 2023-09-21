@@ -1,11 +1,12 @@
-name = []
 
-def get_name():
-    new_name = input("What is your name?: ")
-    return new_name
+def ask_for_name():
+    global name
+    name = input("What is your name? ")
 
 
-namew = get_name()
-name.append(namew)
+def greet(name):
+    print("Hello", name)
 
-print(name) # Printing out names that have been stored in name list
+
+ask_for_name()
+greet(name)
