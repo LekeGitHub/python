@@ -15,8 +15,14 @@ class Dog:
 
 
 
-Jamal = Dog("Jamal", 30, 15)
-Bingo = Dog("Bingo", 70, 25)
+def main():
+    Jamal = Dog("Jamal", 30, 15)
+    Bingo = Dog("Bingo", 70, 25)
 
-Jamal.barks()
-Bingo.wag_tail()
+    Jamal.barks()
+    Bingo.wag_tail()
+
+    browser = Dog("Chicken")
+    browser.barks()
+
+main()
